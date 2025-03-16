@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "守成戰小遊戲",
-    "version": "1.0",
-    "description": "一個小貓試圖跑向關閉按鈕，使用者必須防止它關閉分頁。",
+    "name": "彩虹貓趴趴走",
+    "version": "114.514",
+    "description": "調皮小貓想引起你的注意 但只有她說可以摸時才能摸！ 別讓她成功到達右上角歐",
     "permissions": [],
     "content_scripts": [
       {
