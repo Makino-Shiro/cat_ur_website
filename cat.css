@@ -1,0 +1,63 @@
+/* 貓咪圖片的基本樣式 */
+.cat {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 150px;              /* 貓咪寬度 (高度自動按比例) */
+    z-index: 9999;             /* 確保貓咪在最前景 */
+    cursor: pointer;           /* 游標移到貓咪上方時顯示可點擊 */
+    transition: left 0.3s ease, top 0.3s ease, transform 0.5s ease;  /* 旋轉方向時平滑過渡 */
+  }
+  
+  /* 貓咪面朝不同方向的旋轉 (假設原始圖片面向右方) */
+  .face-right { transform: rotate(0deg); }
+  .face-up    { transform: rotate(-90deg); }   /* 逆時針90度，面向上方 */
+  .face-left  { transform: rotate(180deg); }   /* 面向左方 */
+  .face-down  { transform: rotate(90deg); }    /* 面向下方 (順時針90度) */
+  
+  /* 「摸摸」對話框的樣式 (出現在貓咪上方，不攔截點擊) */
+  .bubble {
+    position: fixed;
+    width: 80px;
+    z-index: 10000;            /* 壓在貓咪上層 */
+    pointer-events: none;      /* 點擊穿透，讓點擊作用在貓咪身上 */
+  }
+  
+  /* 特殊事件彈出的「摸我」對話框 (允許點擊關閉) */
+  .popup-dialog {
+    position: fixed;
+    width: 80px;
+    z-index: 10000;
+    cursor: pointer;           /* 指標移上去呈現可點擊狀態 */
+    /* 圖片的 src 由 JS 指定，樣式與 .bubble 類似但允許點擊 */
+  }
+  
+  /* 螢幕藍色覆蓋的樣式，用於模擬藍屏 */
+  .bluescreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000AA;     /* 藍色背景 (Windows 藍屏的藍) */
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  /* 頁面水平翻轉/垂直翻轉/色彩反轉的類別 */
+  html.flipped-horizontal, body.flipped-horizontal {
+    transform: scaleX(-1) !important;   /* 水平翻轉頁面 */
+  }
+  html.flipped-vertical, body.flipped-vertical {
+    transform: scaleY(-1) !important;   /* 垂直翻轉頁面 */
+  }
+  html.inverted {
+    filter: invert(1) !important;      /* 顏色反轉（對比色） */
+  }
+  
