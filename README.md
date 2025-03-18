@@ -1,19 +1,21 @@
 # cat_ur_website
 
-## Chrome 網路插件
+## Chrome Web Extension
 
-這是一個 Chrome 的網路插件，由於需要收費，因此並未上架。  
-您可以下載此專案後，依照以下步驟進行測試：
+This is a Chrome web extension. Due to subscription requirements, it has not been published in the store.
+You can download this project and follow the steps below to test it:
 
-1. 前往 [chrome://extensions/](chrome://extensions/)。
-2. 開啟右上角的「開發人員模式」。
-3. 點選「新增未封包項目」並選取此專案資料夾。
+1. Go to [chrome://extensions/](chrome://extensions/).
+2. Enable "Developer mode" in the top right corner.
+3. Click "Load unpacked" and select this project folder.
 
 ---
 
-白爛小貓咪一直試圖吸引您的注意力，  
-但只有當她說「可以摸她」時，您才可以摸哦！
+The mischievous little cat is always trying to catch your attention, 
+but you can only pet her when she says "You may pet me"!
 
-如果讓貓咪爬到最右上角，  
-她會對您的電腦為所欲為，  
-請務必小心！
+If the cat reaches the top right corner,
+she will take over your computer,
+so be very careful!
+
+Plugin Demo Link: https://zergling73.com/cat_demo
